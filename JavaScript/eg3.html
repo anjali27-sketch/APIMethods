@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let text = "  JavaScript is Awesome!  ";
+console.log("Original String:", `"${text}"`);
+console.log("Length:", text.length);
+console.log("Trimmed:", `"${text.trim()}"`);
+console.log("Uppercase:", text.toUpperCase());
+console.log("Lowercase:", text.toLowerCase());
+console.log("Character at 4:", text.charAt(4));
+console.log("Unicode at 4:", text.charCodeAt(4));
+console.log("Index of 'is':", text.indexOf("is"));
+console.log("Last index of 'a':", text.lastIndexOf("a"));
+console.log("Includes 'Awesome':", text.includes("Awesome"));
+console.log("Starts with 'Java':", text.trim().startsWith("Java"));
+console.log("Ends with '!':", text.trim().endsWith("!"));
+console.log("Slice (2,10):", text.slice(2, 10));
+console.log("Substring (2,10):", text.substring(2, 10));
+console.log("Substr (2,5):", text.substr(2, 5)); // deprecated but works
+let replaced = text.replace("Awesome", "Powerful");
+console.log("Replace 'Awesome':", replaced);
+let multiReplace = "apple apple".replaceAll("apple", "mango");
+console.log("ReplaceAll:", multiReplace);
+let words = text.trim().split(" ");
+console.log("Split by space:", words);
+let greeting = "Hello".concat(" ", "World", "!");
+console.log("Concatenated:", greeting);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

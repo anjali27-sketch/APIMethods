@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let otp ="125747"
+        console.log("program started");
+        let userotp = prompt("Enter OTP: ");
+        let match = true;
+        for (let i=0; i<6; i++) {
+        if (otp[i] != userotp[i]) {
+        match = false;
+        break;
+    }
+    }
+    if (match && userotp.length == 6) {
+        console.log("Verified OTP successfully");
+    }
+    else{
+        console.log("Invalid OTP");
+    }
+    </script>
+</body>
+</html>

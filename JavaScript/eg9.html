@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function printNum() {
+            for (let i=1; i<=10; i++) {
+                console.log(i);
+            }
+        }
+         printNum();
+        
+        
+        function num() {
+            let j=11;
+            while(j<=20)  {
+               console.log(j);
+               j++
+            }
+        }
+        num();
+
+        function obj() {
+            let k=21;
+            do {
+                console.log(k);
+                k++;
+            }while(k<=30);
+        }
+        obj();
+
+
+        function check() {
+            let age =10;
+            if (age >=18) {
+            console.log("Eligible for voting")
+            }
+            else {
+            console.log("Not Eligible for voting")
+            }
+        }
+        check();
+
+
+        function msg() {
+            let marks = 75;
+          if (marks >= 90) {
+             console.log("Grade A");
+        } else if (marks >= 75) {
+            console.log("Grade B");
+        } else if (marks >= 50) {
+            console.log("Grade C");
+        } else {
+            console.log("Fail");
+        }
+        }
+        msg();
+
+        function show() {
+            let day = 3;
+            switch(day) {
+            case 1:
+            console.log("Monday");
+            break;
+             case 2:
+            console.log("Tuesday");
+             break;
+             case 3:
+            console.log("Wednesday");
+            break;
+            default:
+             console.log("Invalid day");
+            }
+         }
+         show();
+    </script>
+         <button onchange="printNum()">click me</button>
+         <button ondblclick="num()">Double click </button>
+         <button onmouseover="check()">Onmouseover</button>
+         <button onmouseout="msg()">Onmouseout</button>
+        <button onmouseup="show()">Onmouseup</button>
+
+</body>
+</html>
